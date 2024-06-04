@@ -8,6 +8,10 @@ typescript:{
 }
 
 };
+const options: { telemetry: boolean } = {
+    telemetry: false
+  };
+  
 
 export default withSentryConfig(nextConfig, {
 // For all available options, see:
