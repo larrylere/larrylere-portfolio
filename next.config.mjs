@@ -8,7 +8,7 @@ typescript:{
 }
 
 };
-const options: { telemetry: boolean } = {
+const options = {
     telemetry: false
   };
   
