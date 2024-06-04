@@ -1,10 +1,12 @@
 import {withSentryConfig} from '@sentry/nextjs';
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-output: 'undefined',
+
 typescript:{
     ignoreBuildErrors:true,
+
 }
+
 };
 
 export default withSentryConfig(nextConfig, {
@@ -16,6 +18,7 @@ project: "larry-portfolio",
 
 // Only print logs for uploading source maps in CI
 silent: !process.env.CI,
+
 
 // For all available options, see:
 // https://docs.sentry.io/platforms/javascript/guides/nextjs/manual-setup/
