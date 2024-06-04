@@ -1,6 +1,11 @@
 import {withSentryConfig} from '@sentry/nextjs';
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+   
+    reactStrictMode: true,
+    swcMinify: true,
+    // Disable Next.js telemetry
+    telemetry: false,
 
 typescript:{
     ignoreBuildErrors:true,
@@ -8,9 +13,7 @@ typescript:{
 }
 
 };
-const options = {
-    telemetry: false
-  };
+
   
 
 export default withSentryConfig(nextConfig, {
